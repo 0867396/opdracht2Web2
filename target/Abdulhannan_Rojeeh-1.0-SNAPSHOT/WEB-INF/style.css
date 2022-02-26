@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    margin: 0;
+    width:70%;
+    background-color:#F2F2F2;
+}
+#logo{
+    width:100%;
+}
+nav {
+
+    width: 100%;
+    background-color:#555A6E;
+    border-bottom: black solid;
+    text-align: center;
+
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: none;
+    width: 100%;
+
+}
+
+.bar-hamburger{
+    display: inline-block;
+    text-align: right;
+    width: 100%;
+    color:white;
+    padding:10px 10%;
+    position: relative;
+    z-index: 10;
+
+
+}
+
+#hamburger-icon{
+    position: relative;
+    z-index:10;
+}
+
+.bar-hamburger::after{
+    content:'';
+    position: absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    background: #13016e;
+    z-index: 5;
+}
+.fa{
+    float: left;
+}
+header nav ul li {
+    padding: 10px;
+    width: 100%;
+}
+
+
+
+nav ul .hier {
+
+}
+header nav ul li a:hover{
+
+}
+header nav ul li a {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    padding:  10px 0px;
+    text-decoration: none;
+    color:black;
+
+}
+
+
+
+.beschrijving{
+    text-align: center;
+    padding: 1rem;
+}
+
+h2{
+    text-align: center;
+}
+
+footer {
+    background-color:#555A6E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+footer p{
+    text-align: center;
+}
+
+.socialMedia{
+    text-align: center;
+    padding-bottom: 10px;
+    padding-right:5px;
+}
+
+
+footer .fab {
+    color: black;
+}
+/*Overzicht Pagina*/
+
+.overzichtTable{
+    width: 100%;
+}
+table {
+    font-family: arial, sans-serif;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+td, th {
+
+    padding: 8px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color:#FFC108;
+}
+/*Voeg Toe*/
+.kiekBloem{
+    display: flex;
+    flex-flow: column;
+
+}
+form{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 1rem;
+}
+h1{
+    padding-left: 1rem;
+}
+@media only screen and (min-width: 700px) {
+    .bar-hamburger {
+        display: none;
+    }
+    #logo{
+        border-bottom: black solid 1px;
+    }
+    #logo img{
+        width: 4rem;
+    }
+
+    nav {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        flex-wrap:wrap;
+    }
+
+    nav ul {
+        display: flex;
+        width: 50%;
+
+    }
+
+    nav ul li{
+        border-right:black solid 0.5px;
+        border-left: black solid 0.5px;
+
+    }
+    nav ul li a{
+        font-size: 1rem;
+
+    }
+    table{
+        width: 100%;
+    }
+
+
+    form{
+        display: flex;
+        flex-flow: column;
+        width:45%;
+        padding:0rem 1rem 0rem 6rem;
+    }
+    h1{
+        padding-left: 1rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2px 10px;
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width: 1100px) {
+    nav ul li a{
+        font-size: 1.5rem;
+
+    }
+}
+
