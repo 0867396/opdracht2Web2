@@ -1,3 +1,13 @@
+<%@ page import="be.ucll.abdulhannan_rojeeh.domain.db.BloemDB" %>
+<%@ page import="java.util.List" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="be.ucll.abdulhannan_rojeeh.domain.model.Bloem" %>
+<%
+
+
+
+
+%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,35 +48,32 @@
                     <th>Pas aan</th>
                     <th>Verwijder</th>
                 </tr>
+
+                <%--    Open for-loop--%>
+                <%
+                    ArrayList<Bloem> bloem = (ArrayList<Bloem>) request.getAttribute("Bloemen");
+                    for (Bloem b : bloem) {
+
+
+                %>
                 <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Maria Anders</td>
-                    <td>2</td>
-                    <td>Pas aan</td>
-                    <td>Verwijder</td>
+                    <td><%= b.getNaam() %></td>
+
+
+                    <td><%=b.getKleur()%></td>
+
+
+                    <td><%=b.getAantal() %></td>
+
+
 
                 </tr>
-                <tr>
-                    <td>Centro comercial Moctezuma</td>
-                    <td>Francisco Chang</td>
-                    <td>3</td>
-                    <td>Pas aan</td>
-                    <td>Verwijder</td>
-                </tr>
-                <tr>
-                    <td>Ernst Handel</td>
-                    <td>Roland Mendel</td>
-                    <td>5</td>
-                    <td>Pas aan</td>
-                    <td>Verwijder</td>
-                </tr>
-                <tr>
-                    <td>Island Trading</td>
-                    <td>Helen Bennett</td>
-                    <td>10</td>
-                    <td>Pas aan</td>
-                    <td>Verwijder</td>
-                </tr>
+
+
+                <%--    Close for-loop--%>
+                <%
+                    }
+                %>
 
             </table>
         </div>

@@ -4,7 +4,7 @@ public class Bloem {
     private int id , aantal;
     private String naam , kleur;
 
-    public Bloem(int id, String naam, String kleur,int aantal) {
+    public Bloem( String naam, String kleur, int aantal) {
         setId(id);
         setNaam(naam);
         setKleur(kleur);
@@ -13,8 +13,7 @@ public class Bloem {
     }
 
     public void setId(int id) {
-        if(id < 0)throw new IllegalArgumentException("Id moet postief zijn");
-        this.id = id;
+
     }
 
     public void setAantal(int aantal) {

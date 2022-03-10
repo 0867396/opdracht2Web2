@@ -31,8 +31,9 @@
             <h1>Voeg je bloem toe</h1>
 
 
-            <form action="">
+            <form method="post" action="BloemServlet">
                 <div class="row">
+                    <label>Id:</label>
                     <div class="col-25">
                         <label for="fname">Naam:</label>
 

@@ -13,7 +13,7 @@ public class BloemDB {
 
     }
 
-    public void add(Bloem bloem) {
+    public void voegBloemToe(Bloem bloem) {
         if(bloem == null)throw new IllegalArgumentException("Er is geen bloem toegevoegd");
         if(find(bloem.getId()) != null)throw new IllegalArgumentException("bloem met opgegeven id bestaat al");
         if(find(bloem.getNaam()) != null)throw new IllegalArgumentException("bloem met opgegeven naam bestaat al");
@@ -22,6 +22,9 @@ public class BloemDB {
         bloemen.add(bloem);
 
     }
+
+
+
 
     public void verwijder(Bloem bloem) {
         if(bloem == null)throw new IllegalArgumentException("Er is geen bloem toegevoegd");
